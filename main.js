@@ -7,7 +7,7 @@ const buyClay = () => {
 //define a funnction named makePottery
 
 const makePottery = (obj) => {
-    let newObj = {...obj};
+    let newObj = obj;
     newObj.shape = "Bowl";
     return newObj
 }
@@ -18,7 +18,7 @@ console.log(madePottery)
 
 //define a function named bisqueFire
 const bisqueFire = (obj) => {
-    let newObj = {...obj};
+    let newObj = obj;
     newObj.readyForGlazing = true;
     return newObj
 }
@@ -32,7 +32,7 @@ console.log(bisquedPottery)
 
 const glazePottery = (obj) => {
     if (obj.readyForGlazing === true) {
-        let newObj = {...obj};
+        let newObj = obj;
         newObj.glazing = "Midnight Blue";
         return newObj
 
@@ -49,12 +49,12 @@ console.log(glazedPottery);
 //define a function named finalFiring. the takes two arguments, the pottery and the temp. check if pottery is cracked.
 const finalFiring = (obj, temp) => {
     if (temp > 1200) {
-        let newObj = {...obj};
+        let newObj = obj;
         newObj.cracked = true;
         return newObj
     
     } else {
-        let newObj = {...obj};
+        let newObj = obj;
         newObj.cracked = false;
         return newObj
     }
