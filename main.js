@@ -25,13 +25,13 @@ const bisqueFire = (obj) => {
 
 const bisquedPottery = bisqueFire(madePottery);
 
-console.log(bisquedPottery)
+// console.log(bisquedPottery)
 
 //define a function named glazePottery
 //if bisue fired, add name of glaze, otherwise log "Make sure you bisque fire the pottery before you glaze it."
 
 const glazePottery = (obj) => {
-    if (obj.readyForGlazing === true) {
+    if (obj.readyForGlazing) {
         let newObj = obj;
         newObj.glazing = "Midnight Blue";
         return newObj
@@ -44,7 +44,7 @@ const glazePottery = (obj) => {
 
 const glazedPottery = glazePottery(bisquedPottery);
 
-console.log(glazedPottery);
+// console.log(glazedPottery);
 
 //define a function named finalFiring. the takes two arguments, the pottery and the temp. check if pottery is cracked.
 const finalFiring = (obj, temp) => {
@@ -63,4 +63,4 @@ const finalFiring = (obj, temp) => {
 
 const finishedPottery = finalFiring(glazedPottery, 1201);
 
-console.log(finishedPottery)
+// console.log(finishedPottery)
